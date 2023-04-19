@@ -19,7 +19,7 @@
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
-                            Vào cửa hàng trên ứng dụng Shopee
+                            Vào cửa hàng trên ứng dụng
 
                             <!-- Header QR Code -->
                             <div class="header__qr">
@@ -49,7 +49,9 @@
                                 Thông báo
                             </a> 
                             <div class="header__notify">
-                                <header class="header__notify-header">
+
+                                <!-- Header notify login -->
+                                <!-- <header class="header__notify-header">
                                     <h3>Thông Báo Mới Nhận</h3>
                                 </header>
                                 <ul class="header__notify-list">
@@ -93,11 +95,22 @@
                                             </div>
                                         </a>
                                     </li>
-                                    
                                 </ul>
                                 <footer class="header__notify-footer">
                                     <a href="" class="header__notify-footer-btn">Xem tất cả</a>
-                                </footer>
+                                </footer> -->
+
+                                <!-- Header nofity no login -->
+                                <div class="header__notify-no-login">
+                                    <img src="./assets/img/no_notify.png" alt="" class="header__notify-no-login-img">
+                                    <span class="header__notify-no-login-msg">
+                                        Đăng nhập để xem thông báo
+                                    </span>
+                                    <footer class="header__notify-no-login-footer">
+                                        <button class="header__notify-no-login-footer-btn js-auth-form-btn-register">Đăng ký</button>
+                                        <button class="header__notify-no-login-footer-btn js-auth-form-btn-login">Đăng nhập</button>
+                                    </footer>
+                                </div>
                             </div>
                         </li>
                         <li class="header__navbar-item">
@@ -119,28 +132,24 @@
 
                     <div class="header__search">
                         <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
-                        <div class="header__search-select">
-                            <span class="header__search-select-label">Trong shop</span>
-                            <i class="header__search-select-icon fa-sharp fa-solid fa-caret-down"></i>
-
-                            <ul class="header__search-option">
-                                <li class="header__search-option-item header__search-option-item--active">
-                                    <span>Trong shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-                                <li class="header__search-option-item">
-                                    <span>Ngoài shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-                            </ul>
-                        </div>
+                        
                         <button class="header__search-btn">
                             <i class="header__search-btn-icon fas fa-search"></i>
                         </button>
                     </div>
 
+                    <!-- Cart layout -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+    
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,7 +191,7 @@
 
                     <div class="auth-form__aside">
                         <p class="auth-form__policy-text">
-                            Bằng việc đăng kí, bạn đã đồng ý với Shoppe về
+                            Bằng việc đăng kí, bạn đã đồng ý về
                             <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
                             <a href="" class="auth-form__text-link">Chính sách bảo mật</a> 
                         </p>
@@ -267,13 +276,13 @@
         const modalBody = document.querySelector('.js-modal__body')
 
         // Register
-        const registerBtn = document.querySelector('.js-auth-form-btn-register')
+        const registerBtns = document.querySelectorAll('.js-auth-form-btn-register')
         const modalAuthFormRegister = document.querySelector('.js-auth-form-register')
         const modalRegisterClose = document.querySelector('.js-modal-register-close')
         const btnSwitchLogin = document.querySelector('.js-btn-switch-login')
        
         //  Login
-        const loginBtn = document.querySelector('.js-auth-form-btn-login')
+        const loginBtns = document.querySelectorAll('.js-auth-form-btn-login')
         const modalAuthFormLogin = document.querySelector('.js-auth-form-login')
         const modalLoginClose = document.querySelector('.js-modal-login-close')
         const btnSwitchRegister = document.querySelector('.js-btn-switch-register')
@@ -290,7 +299,9 @@
             modalAuthFormRegister.classList.remove('open')
         }
         // Nghe hành vi bấm vào nút đăng ký
-        registerBtn.addEventListener('click', showAuthFormRegister)
+        for(const registerBtn of registerBtns){
+            registerBtn.addEventListener('click', showAuthFormRegister)
+        }
 
         // Nghe hành vi khi bấm vào nút đăng nhập trong form đăng kí
         btnSwitchLogin.addEventListener('click', hideAuthFormRegister)
@@ -312,7 +323,10 @@
         }
 
         // Nghe hành vi bấm vào nút đăng nhập
-        loginBtn.addEventListener('click', showAuthFormLogin)
+        for(const loginBtn of loginBtns){
+            loginBtn.addEventListener('click', showAuthFormLogin)
+
+        }
 
         // Nghe hành vi khi bấm vào nút đăng kí trong form đăng nhập
         btnSwitchRegister.addEventListener('click', hideAuthFormLogin)
