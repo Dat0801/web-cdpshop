@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CDP Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -155,12 +155,646 @@
             </div>
         </header>
 
-        <div class="container">
+        <div class="app_container">
+            <div class="grid">
+                <div class="grid__row app_content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list-ul"></i>
+                                Danh Mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Sản Phẩm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sách Mới</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sách Bán Chạy</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sách Kinh Tế - Kinh Doanh</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Tiểu Thuyết - Truyện Ngắn</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sách Văn Học</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sách Tâm Lý Học</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sách Thiếu Nhi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sách Kỹ Năng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn btn--primary">Phổ Biến</button>
+                            <button class="home-filter__btn btn">Mới Nhất</button>
+                            <button class="home-filter__btn btn">Bán Chạy</button>
 
+                            <div class="select-input">
+                                <span class="select-input__label">Giá </span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/54
+                                </span>
+                                
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- Product Item -->
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/122481e970acfb1de2bfbd8cbd402831_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách Nhã Nam - Cây Cam Ngọt Của Tôi</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">108.000đ</span>
+                                            <span class="home-product-item__price-current">84.240đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 2,8k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">22%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-22110-7jwnmgx1iejvd5_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Thuật Thao Túng: Góc Tối Ẩn Sau Mỗi Câu Nói</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">139.000đ</span>
+                                            <span class="home-product-item__price-current">98.690đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 2,6k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">29%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfj4ve7pfotx8b_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Hãy Khiến Tương Lai Biết Ơn Vì Hiện Tại Bạn Đã Cố Gắng Hết Mình</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">99.000đ</span>
+                                            <span class="home-product-item__price-current">69.000đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 7,6k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">30%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/ae1e10362eb70983f538a4809ae20546_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Tâm Lý Học Tội Pham – Phác Họa Chân Dung Kẻ Phạm Tội</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">145.000đ</span>
+                                            <span class="home-product-item__price-current">106.000đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 22,5k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">27%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-22110-czim0phz5hkv83_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Ghi Chép Pháp Y - Những Cái Chết Bí Ẩn</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">150.000đ</span>
+                                            <span class="home-product-item__price-current">112.500đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 3,4k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">25%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/f992d65e77f79b8e1f652f248f0aa004_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách Nhã Nam - Tuổi Trẻ Đáng Giá Bao Nhiêu (Tái Bản 2021)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">90.000đ</span>
+                                            <span class="home-product-item__price-current">70.200đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 2,7k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">22%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/e68216612c113e4adfceab6d42241975_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách Nhã Nam - Nhà Giả Kim (Tái Bản)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">79.000đ</span>
+                                            <span class="home-product-item__price-current">61.620đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 3,5k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">22%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/df041a7981d17a488b5f47713ddd3b1c_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Sức Mạnh Của Ngôn Từ</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">96.000đ</span>
+                                            <span class="home-product-item__price-current">71.040đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 7,3k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">26%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/08c6b26ad02f3c5e9c649bf5904d3bc6_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Tôi Quyết Định Sống Cho Chính Tôi (Bản Không Sổ To Do List)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">88.000đ</span>
+                                            <span class="home-product-item__price-current">63.360đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 11,4k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">28%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/3c844930d1c48becc9feb5aae185c6b4_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Đừng Lựa Chọn An Nhàn Khi Còn Trẻ (Tái Bản)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">99.000đ</span>
+                                            <span class="home-product-item__price-current">72.270đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 3,1k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">27%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/d04028c5ef1e0298e5b386e2b7272e01_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Kỷ Luật Tự Giác</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">84.000đ</span>
+                                            <span class="home-product-item__price-current">59.000đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 4,2k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">30%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/ff1e05e760c21df34e4f3538417fcf28_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Thiên Tài Bên Trái, Kẻ Điên Bên Phải (Tái Bản)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">179.000đ</span>
+                                            <span class="home-product-item__price-current">125.300đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 14,1k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">30%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/fc608709cdc7609f01b9cdcf336c83e0_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Càng Kỷ Luật, Càng Tự Do</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">109.000đ</span>
+                                            <span class="home-product-item__price-current">81.750đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 2,3k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">25%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/c83ef8dc30086c85a2fdf6beae369a2c_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Ổn Định Hay Tự Do</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">129.000đ</span>
+                                            <span class="home-product-item__price-current">95.460đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 3,8k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">26%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-22100-qjpl31gvmviv6b_tn);"></div>
+                                        <h4 class="home-product-item__name">Sách - Luật Tâm Thức – Giải Mã Ma Trận Vũ Trụ</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">292.000đ</span>
+                                            <span class="home-product-item__price-current">233.600đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <div class="home-product-item__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 2,4k</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
-
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">CDP Blog</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">CDP Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Thanh Toán</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Vận Chuyển</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Chăm Sóc Khách Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Giới Thiệu Về CDP</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Điều Khoản CDP</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Chính Sách Bảo Mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sản Phẩm</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sách Mới</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sách Bán Chạy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sách Kinh Tế - Kinh Doanh</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tiểu Thuyết - Truyện Ngắn</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sách Văn Học</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sách Tâm Lý Học</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sách Thiếu Nhi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Sách Kỹ Năng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">
+                                    <i class="footer-item__icon fab fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="/assets/img/qr_code.png" alt="Download QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="/assets/img/app_store.png" alt="AppStore" class="footer__download-app-icon">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="/assets/img/google_play.png" alt="GooglePlay" class="footer__download-app-icon">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="/assets/img/app_gallery.png" alt="AppGallery" class="footer__download-app-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid">
+                    <div class="grid_row">
+                        <p class="footer__text">© 2023 - Bản quyền thuộc về Công ty TNHH CDP</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
