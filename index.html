@@ -155,6 +155,33 @@
             </div>
         </header>
 
+        <div class="slider">
+            <div class="slider-prev">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <ul class="slider-dots">
+              <li class="slider-dot-item active" data-index="0"></li>
+              <li class="slider-dot-item" data-index="1"></li>
+              <li class="slider-dot-item" data-index="2"></li>
+            </ul>
+            <div class="slider-wrapper">
+              <div class="slider-main">
+                <div class="slider-item">
+                    <img src="https://down-ws-vn.img.susercontent.com/vn-11134210-7qukw-lg3kifo9q162b7.webp" alt=""/>
+                </div>
+                <div class="slider-item">
+                    <img src="https://down-ws-vn.img.susercontent.com/vn-11134210-7qukw-lg3kifoa5heye9.webp" alt=""  />
+                </div>
+                <div class="slider-item">
+                    <img src="https://down-ws-vn.img.susercontent.com/vn-11134210-7qukw-lg3kifo9akx6b2.webp" alt=""/>
+                </div>
+              </div>
+            </div>
+            <div class="slider-next">
+                <i class="fas fa-angle-right "></i>
+            </div>
+          </div>
+
         <div class="app_container">
             <div class="grid">
                 <div class="grid__row app_content">
@@ -772,16 +799,16 @@
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
-                            <img src="/assets/img/qr_code.png" alt="Download QR" class="footer__download-qr">
+                            <img src="./assets/img/qr_code.png" alt="Download QR" class="footer__download-qr">
                             <div class="footer__download-apps">
                                 <a href="" class="footer__download-app-link">
-                                    <img src="/assets/img/app_store.png" alt="AppStore" class="footer__download-app-icon">
+                                    <img src="./assets/img/app_store.png" alt="AppStore" class="footer__download-app-icon">
                                 </a>
                                 <a href="" class="footer__download-app-link">
-                                    <img src="/assets/img/google_play.png" alt="GooglePlay" class="footer__download-app-icon">
+                                    <img src="./assets/img/google_play.png" alt="GooglePlay" class="footer__download-app-icon">
                                 </a>
                                 <a href="" class="footer__download-app-link">
-                                    <img src="/assets/img/app_gallery.png" alt="AppGallery" class="footer__download-app-icon">
+                                    <img src="./assets/img/app_gallery.png" alt="AppGallery" class="footer__download-app-icon">
                                 </a>
                             </div>
                         </div>
@@ -904,79 +931,6 @@
         </div>
     </div>
 
-    <script>
-        
-        const modal = document.querySelector('.js-modal')
-        const modalBody = document.querySelector('.js-modal__body')
-
-        // Register
-        const registerBtns = document.querySelectorAll('.js-auth-form-btn-register')
-        const modalAuthFormRegister = document.querySelector('.js-auth-form-register')
-        const modalRegisterClose = document.querySelector('.js-modal-register-close')
-        const btnSwitchLogin = document.querySelector('.js-btn-switch-login')
-       
-        //  Login
-        const loginBtns = document.querySelectorAll('.js-auth-form-btn-login')
-        const modalAuthFormLogin = document.querySelector('.js-auth-form-login')
-        const modalLoginClose = document.querySelector('.js-modal-login-close')
-        const btnSwitchRegister = document.querySelector('.js-btn-switch-register')
-
-        // Hàm hiển thị form đăng ký
-        function showAuthFormRegister() {
-            modal.classList.add('open')
-            modalAuthFormRegister.classList.add('open')
-        }
-
-        // Hàm ẩn form đăng ký
-        function hideAuthFormRegister() {
-            modal.classList.remove('open')
-            modalAuthFormRegister.classList.remove('open')
-        }
-        // Nghe hành vi bấm vào nút đăng ký
-        for(const registerBtn of registerBtns){
-            registerBtn.addEventListener('click', showAuthFormRegister)
-        }
-
-        // Nghe hành vi khi bấm vào nút đăng nhập trong form đăng kí
-        btnSwitchLogin.addEventListener('click', hideAuthFormRegister)
-        btnSwitchLogin.addEventListener('click', showAuthFormLogin)
-
-        // Nghe hành vi bấm vào nút trở lại trong form đăng kí
-        modalRegisterClose.addEventListener('click', hideAuthFormRegister)
-
-        // Hàm hiển thị form đăng nhập
-        function showAuthFormLogin() {
-            modal.classList.add('open')
-            modalAuthFormLogin.classList.add('open')
-        }
-
-        // Hàm ẩn form đăng nhập
-        function hideAuthFormLogin() {
-            modal.classList.remove('open')
-            modalAuthFormLogin.classList.remove('open')
-        }
-
-        // Nghe hành vi bấm vào nút đăng nhập
-        for(const loginBtn of loginBtns){
-            loginBtn.addEventListener('click', showAuthFormLogin)
-
-        }
-
-        // Nghe hành vi khi bấm vào nút đăng kí trong form đăng nhập
-        btnSwitchRegister.addEventListener('click', hideAuthFormLogin)
-        btnSwitchRegister.addEventListener('click', showAuthFormRegister)
-
-        // Nghe hành vi bấm vào nút trở lại trong form đăng nhập
-        modalLoginClose.addEventListener('click', hideAuthFormLogin)
-        
-        // Nghe hành vi bấm vào modal
-        modal.addEventListener('click', hideAuthFormRegister)
-        modal.addEventListener('click', hideAuthFormLogin)
-
-        // Ngăn chặn hành vi nổi bọt
-        modalBody.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
