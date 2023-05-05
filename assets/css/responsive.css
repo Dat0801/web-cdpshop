@@ -3,6 +3,7 @@
     .hide-on-mobile-tablet{
         display: none;
     }
+
     .header{
         position: fixed;
         top: 0;
@@ -34,12 +35,6 @@
     }
     .mobile-category{
         display: block;
-    }
-}
-
-@media (max-width: 1240px) {
-    .hide-on-small-pc {
-        display: none;
     }
 }
 
