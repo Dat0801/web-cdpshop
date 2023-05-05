@@ -29,10 +29,20 @@
     .app_content{
         padding-top: 8px;
     }
+    .slider {
+        margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+    }
     .mobile-category{
         display: block;
     }
 }
+
+@media (max-width: 1240px) {
+    .hide-on-small-pc {
+        display: none;
+    }
+}
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px){
     :root{
@@ -44,7 +54,7 @@
     }
     .header__cart{
         width: 80px;
-        text-align: right;
+        text-align: center;
     }
 }
 /* Mobile */
@@ -102,7 +112,7 @@
         display: block;
     }
     .header__logo-img{
-        width: 120px;
+        width: 140px;
     }
     .footer__content{
         padding: 0 16px;
