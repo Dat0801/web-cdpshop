@@ -296,7 +296,7 @@
 /* Slider */
 
 .slider {
-    margin: 35px auto;
+    margin: 35px 0;
     position: relative;
 }
 
@@ -315,6 +315,7 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
     font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
     z-index: 1;
 }
 
@@ -343,7 +344,7 @@
     z-index: 1;
 }
 
-.slider-dots li {
+.slider-dot-item {
     margin: 0 6px;
     width: 12px;
     height: 12px;
@@ -353,7 +354,7 @@
     transition: background-color 0.25s linear;
 }
 
-.slider-dots li.active {
+.slider-dot-item.active {
     background-color: var(--primary-color);
 }
 
