@@ -1043,7 +1043,7 @@
     color: var(--white-color);
     font-weight: 500;
     font-size: 1.3rem;
-
+    display: block;
 }
 
 /* Footer */

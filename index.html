@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -178,7 +179,8 @@
                     <a href="" class="header__sort-link">
                         Giá
                         <i class="select-input__icon fas fa-angle-down"></i>
-                    </a></li>
+                    </a>
+                </li>
             </ul>
         </header>
         <div class="grid wide">
@@ -277,12 +279,12 @@
                                 </span>
                                 
                                 <div class="home-filter__page-control">
-                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                    <span class="btn-prev-filter home-filter__page-btn home-filter__page-btn--disabled">
                                         <i class="home-filter__page-icon fas fa-angle-left"></i>
-                                    </a>
-                                    <a href="" class="home-filter__page-btn">
+                                    </span>
+                                    <span class="btn-next-filter home-filter__page-btn">
                                         <i class="home-filter__page-icon fas fa-angle-right"></i>
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -317,9 +319,9 @@
                         </nav>
 
                         <div class="home-product">
-                            <div class="row sm-gutter">
+                            <div class="row sm-gutter" id="product">
                                 <!-- Product Item -->
-                                <div class="col l-2-4 m-4 c-6">
+                                <!-- <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/122481e970acfb1de2bfbd8cbd402831_tn);"></div>
                                         <h4 class="home-product-item__name">Sách Nhã Nam - Cây Cam Ngọt Của Tôi</h4>
@@ -344,8 +346,8 @@
                                             <span class="home-product-item__sale-off-label">GIẢM</span>
                                         </div>
                                     </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
+                                </div>  -->
+                                <!-- <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-22110-7jwnmgx1iejvd5_tn);"></div>
                                         <h4 class="home-product-item__name">Sách - Thuật Thao Túng: Góc Tối Ẩn Sau Mỗi Câu Nói</h4>
@@ -708,38 +710,41 @@
                                             <span class="home-product-item__sale-off-label">GIẢM</span>
                                         </div>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
                         <ul class="pagination home-product__pagination">
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
+                            <li class="btn-prev-page pagination-item">
+                                <span class="pagination-item__link">
                                     <i class="pagination-item__icon fas fa-angle-left"></i>
-                                </a>
+                                </span>
                             </li>
-                            <li class="pagination-item pagination-item--active">
-                                <a href="" class="pagination-item__link">1</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">2</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">3</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">4</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">5</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">...</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
+                            <div class="number-page" id="number-page">
+                                <!-- <li class="pagination-item pagination-item--active">
+                                <span class="pagination-item__link">1</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-item__link">2</span>
+                                </li>   
+                                <li class="pagination-item">
+                                    <span class="pagination-item__link">3</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-item__link">4</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-item__link">5</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-item__link">...</span>
+                                </li> -->
+                            </div>
+                            
+                            <li class="btn-next-page pagination-item">
+                                <span class="pagination-item__link">
                                     <i class="pagination-item__icon fas fa-angle-right"></i>
-                                </a>
+                                </span>
                             </li>
                             
                         </ul>
